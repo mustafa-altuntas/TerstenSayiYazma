@@ -12,7 +12,7 @@ namespace TerstenSayiYazma
             {
                 Console.Write("Pozitif bir tam sayı giriniz: ");
                 girilenSayi = int.Parse(Console.ReadLine());
-                if(girilenSayi < 0)
+                if(girilenSayi <= 0)
                     tekrarSayiAl = true;
                 else
                     tekrarSayiAl = false;
@@ -30,6 +30,15 @@ namespace TerstenSayiYazma
             Console.WriteLine("Sayının Tersi: "+int.Parse(tempStr));
 
             Console.ReadLine();
+
+            // Girdi -> 879
+            // Çıktı -> 978
+
+            // Girdi -> 1003
+            // Çıktı -> 3001
+
+            // Girdi -> 3000
+            // Çıktı -> 3
         }
     }
 }
